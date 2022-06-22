@@ -50,7 +50,6 @@ Display all the images with their respective filters.
 </br>
 
 ```python
-
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -65,9 +64,7 @@ i) Using Averaging Filter
 kernel=np.ones((13,13),np.float32)/169
 image=cv2.filter2D(img1,-1,kernel)
 plt.figure(figsize=(10,10))
-
 plt.subplot(1,2,1)
-
 plt.axis("off")
 plt.title('Original image')
 plt.imshow(img1)
@@ -75,11 +72,6 @@ plt.subplot(1,2,2)
 plt.axis("off")
 plt.title('Average Filter image')
 plt.imshow(image)
-
-
-
-
-
 ```
 ii) Using Weighted Averaging Filter
 ```Python
@@ -95,12 +87,6 @@ plt.subplot(1,2,2)
 plt.axis("off")
 plt.title('Average Filter image')
 plt.imshow(image1)
-
-
-
-
-
-
 ```
 iii) Using Gaussian Filter
 ```Python
@@ -112,16 +98,9 @@ plt.axis("off")
 plt.title('Original image')
 plt.imshow(img1)
 plt.subplot(1,2,2)
-
 plt.axis("off")
 plt.title('Average Filter image')
 plt.imshow(img4)
-
-
-
-
-
-
 ```
 
 iv) Using Median Filter
@@ -136,12 +115,6 @@ plt.subplot(1,2,2)
 plt.axis("off")
 plt.title('Average Filter image')
 plt.imshow(img4)
-
-
-
-
-
-
 ```
 
 ### 2. Sharpening Filters
@@ -158,13 +131,6 @@ plt.subplot(1,2,2)
 plt.axis("off")
 plt.title('Average Filter image')
 plt.imshow(img6)
-
-
-
-
-
-
-
 ```
 ii) Using Laplacian Operator
 ```Python
@@ -179,15 +145,6 @@ plt.subplot(1,2,2)
 plt.axis("off")
 plt.title('Average Filter image')
 plt.imshow(img7)
-
-
-
-
-
-
-
-
-
 ```
 
 ## OUTPUT:
@@ -196,40 +153,26 @@ plt.imshow(img7)
 
 i) Using Averaging Filter
 </br>
-</br>
+
 ![07957da6-ce48-4fd5-b309-29a07e21d3c5](https://user-images.githubusercontent.com/75235477/167808931-1e8793e3-09a9-4c45-a06c-e153a194613e.jpg)
-
-
-</br>
 </br>
 
 ii) Using Weighted Averaging Filter
 </br>
-</br>
 
 ![6f6c1189-d7c5-487c-a1ee-db5daa1040a1](https://user-images.githubusercontent.com/75235477/167809108-12e6b1bb-c231-4f95-a881-ab25ef6c7ed1.jpg)
-
-
-</br>
 </br>
 
 iii) Using Gaussian Filter
 </br>
-</br>
-
 
 ![b3a1d084-319a-4064-80b5-65ba59eedd0c](https://user-images.githubusercontent.com/75235477/167809458-2403b6a0-ccda-4ebf-8def-3cbb88a4355e.jpg)
-
-</br>
 </br>
 
 iv) Using Median Filter
 </br>
-</br>
 
 ![8c6a48fb-0d52-40a0-8f99-8aba5b7a20ef](https://user-images.githubusercontent.com/75235477/167809552-4eb03743-9265-4c24-a876-2736ea3db0a4.jpg)
-
-</br>
 </br>
 
 ### 2. Sharpening Filters
@@ -237,20 +180,14 @@ iv) Using Median Filter
 
 i) Using Laplacian Kernal
 </br>
-</br>
 
 ![15578e74-8bf2-4a55-97ae-a63319ea3de3](https://user-images.githubusercontent.com/75235477/167809671-534e81c4-f820-4c93-9832-4d24eaec4959.jpg)
-
-</br>
 </br>
 
 ii) Using Laplacian Operator
 </br>
-</br>
 
 ![9fdad4c1-b7f2-47ba-b361-aff432a2731c](https://user-images.githubusercontent.com/75235477/167809708-b632dd3c-a942-4b8f-9719-a1640cc9cd43.jpg)
-
-</br>
 </br>
 
 ## Result:
